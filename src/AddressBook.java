@@ -9,20 +9,17 @@ public class AddressBook {
     }
 
     public static void main(String[] args) {
-        System.out.println("Address Book");
+        AddressBook addressBook = new AddressBook();
+        BuddyInfo buddy1 = new BuddyInfo("Joe", "55 Joe Street", "1111111111");
+        addressBook.addBuddy(buddy1);
+        addressBook.removeBuddy(buddy1);
     }
 
     public void addBuddy(BuddyInfo buddy) {
         buddies.add(buddy);
     }
 
-    public BuddyInfo removeBuddy (String name) {
-        for (BuddyInfo i : buddies) {
-            if (i.getName().equals(name)) {
-                buddies.remove(i);
-                return i;
-            }
-        }
-        return null;
+    public void removeBuddy (BuddyInfo buddy) {
+        buddies.remove(buddy);
     }
 }
