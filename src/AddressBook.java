@@ -12,7 +12,7 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         BuddyInfo buddy1 = new BuddyInfo("Joe", "55 Joe Street", "1111111111");
         addressBook.addBuddy(buddy1);
-        addressBook.removeBuddy(buddy1);
+        addressBook.removeBuddy(buddy1); //test
     }
 
     public void addBuddy(BuddyInfo buddy) {
