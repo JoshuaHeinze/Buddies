@@ -13,6 +13,7 @@ public class AddressBook {
         BuddyInfo buddy1 = new BuddyInfo("Joe", "55 Joe Street", "1111111111");
         addressBook.addBuddy(buddy1);
         addressBook.removeBuddy(buddy1); //test 2
+        addressBook.branchTest();
     }
 
     public void addBuddy(BuddyInfo buddy) {
@@ -21,6 +22,10 @@ public class AddressBook {
 
     public void removeBuddy (BuddyInfo buddy) {
         buddies.remove(buddy);
+    }
+
+    public void branchTest() {
+        System.out.println("This is a branch");
     }
 }
 
